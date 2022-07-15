@@ -23,7 +23,7 @@ public:
 	SHA256Generator();
 	~SHA256Generator();
 
-	std::string generate(const char* data);
+	std::string generate(const std::string data);
 
 private:
 

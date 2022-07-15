@@ -19,12 +19,12 @@ SHA256Generator::~SHA256Generator()
 {
 }
 
-std::string SHA256Generator::generate(const char* data)
+std::string SHA256Generator::generate(const std::string data)
 {
-	int strLen = strlen(data);
+	int strLen = data.length();
 	unsigned char hash[32];
 
-	SHA256Update((unsigned char*)data, strLen);
+	SHA256Update((unsigned char*)data.c_str(), strLen);
 	SHA256Final(hash);
 
 	std::stringstream ss;

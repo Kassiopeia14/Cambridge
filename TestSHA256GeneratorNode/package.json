@@ -1,0 +1,9 @@
+{
+  "name": "test-sha256-generator-node",
+  "version": "0.0.0",
+  "description": "TestSHA256GeneratorNode",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}
